@@ -1,0 +1,26 @@
+{
+  "dataset": "MINDsmall",
+  "split": {
+    "strategy": "chronological",
+    "training_period": "2019-11-09 through 2019-11-13",
+    "validation_period": "2019-11-14",
+    "train_impressions": 126695,
+    "validation_impressions": 30270
+  },
+  "models": {
+    "popularity": {
+      "mrr": 0.2214084494610731,
+      "ndcg@5": 0.22425786086807636,
+      "ndcg@10": 0.28296997604552315,
+      "recall@5": 0.33329327711033657,
+      "recall@10": 0.5033988422360466
+    },
+    "category_affinity": {
+      "mrr": 0.24834457850005529,
+      "ndcg@5": 0.25956881083268113,
+      "ndcg@10": 0.32015648730964913,
+      "recall@5": 0.3782595891450332,
+      "recall@10": 0.5529743356159631
+    }
+  }
+}
