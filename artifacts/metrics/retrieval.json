@@ -1,0 +1,39 @@
+{
+  "dataset": "MINDsmall",
+  "split": {
+    "strategy": "chronological",
+    "validation_date": "2019-11-14",
+    "train_impressions": 126695,
+    "validation_impressions": 30270
+  },
+  "corpus": {
+    "all_articles": 51282,
+    "training_observed_articles": 47538
+  },
+  "evaluation": {
+    "evaluated_impressions": 20168,
+    "no_usable_history": 543,
+    "no_positive_articles": 0,
+    "cold_only_impressions": 9559,
+    "personalization_coverage": 0.9737820481869538
+  },
+  "retrieval": {
+    "embedding_faiss": {
+      "index": "IndexFlatIP",
+      "candidate_k": 100,
+      "recall@50": 0.016833718173712226,
+      "recall@100": 0.02794181885812191,
+      "latency_ms": {
+        "mean": 1.7568422923689668,
+        "p50": 1.548790984088555,
+        "p95": 3.1114442768739536,
+        "p99": 3.7664924992713953
+      }
+    },
+    "global_popularity": {
+      "candidate_k": 100,
+      "recall@50": 0.009683108139821745,
+      "recall@100": 0.013788190741780587
+    }
+  }
+}

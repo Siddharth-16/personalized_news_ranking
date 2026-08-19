@@ -22,14 +22,14 @@ TRAIN_NEWS_PATH = "data/raw/train/news.tsv"
 VALIDATION_DATE = "2019-11-14"
 
 OUTPUT_PATH = Path(
-    "artifacts/metrics/day1_baselines.json"
+    "artifacts/metrics/baselines.json"
 )
 
 
 def main():
 
     print("=" * 70)
-    print("PERSONALIZED NEWS RANKING ENGINE — DAY 1 BASELINES")
+    print("PERSONALIZED NEWS RANKING ENGINE")
     print("=" * 70)
 
     behaviors = load_behaviors(
