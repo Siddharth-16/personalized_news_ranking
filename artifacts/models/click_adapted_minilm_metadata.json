@@ -1,0 +1,32 @@
+{
+  "experiment": "click_adapted_encoder",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "objective": "MultipleNegativesRankingLoss",
+  "triplet_definition": {
+    "anchor": "random previously clicked article title",
+    "positive": "clicked article from current impression",
+    "negative": "displayed but unclicked article from current impression"
+  },
+  "training": {
+    "examples": 50000,
+    "epochs": 1.0,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "warmup_ratio": 0.1,
+    "random_seed": 42,
+    "training_loss": 4.029051387149862
+  },
+  "data": {
+    "dataset": "MINDsmall",
+    "training_impressions": 126695,
+    "validation_cutoff": "2019-11-14",
+    "triplet_stats": {
+      "triplets": 50000,
+      "skipped_no_history": 492,
+      "skipped_no_positive": 0,
+      "skipped_no_negative": 0,
+      "skipped_missing_title": 0
+    }
+  },
+  "device": "mps"
+}

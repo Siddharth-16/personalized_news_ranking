@@ -1,0 +1,26 @@
+{
+  "dataset": "MINDsmall",
+  "validation_date": "2019-11-14",
+  "cold_start_definition": "candidate article not observed in any training-period history or impression",
+  "evaluation": {
+    "impressions_with_cold_click": 14036,
+    "evaluated_impressions": 13025,
+    "no_usable_history": 298,
+    "insufficient_cold_candidates": 713,
+    "missing_embeddings": 0,
+    "mean_cold_candidates": 14.846218809980806,
+    "median_cold_candidates": 9.0
+  },
+  "models": {
+    "training_click_popularity": {
+      "mrr": 0.35562920666995523,
+      "ndcg@5": 0.39114579502564434,
+      "ndcg@10": 0.45633166573871686
+    },
+    "frozen_content_similarity": {
+      "mrr": 0.46533637264165556,
+      "ndcg@5": 0.5184971633428125,
+      "ndcg@10": 0.5678758604867474
+    }
+  }
+}

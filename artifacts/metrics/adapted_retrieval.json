@@ -1,0 +1,44 @@
+{
+  "dataset": "MINDsmall",
+  "embeddings": {
+    "directory": "artifacts/embeddings_adapted",
+    "model_name": "artifacts/models/click_adapted_minilm",
+    "embedding_dim": 384
+  },
+  "split": {
+    "strategy": "chronological",
+    "validation_date": "2019-11-14",
+    "train_impressions": 126695,
+    "validation_impressions": 30270
+  },
+  "corpus": {
+    "all_articles": 51282,
+    "training_observed_articles": 47538
+  },
+  "evaluation": {
+    "evaluated_impressions": 20168,
+    "no_usable_history": 543,
+    "no_positive_articles": 0,
+    "cold_only_impressions": 9559,
+    "personalization_coverage": 0.9737820481869538
+  },
+  "retrieval": {
+    "embedding_faiss": {
+      "index": "IndexFlatIP",
+      "candidate_k": 100,
+      "recall@50": 0.005870922347518936,
+      "recall@100": 0.01093398659716589,
+      "latency_ms": {
+        "mean": 1.8746296810748637,
+        "p50": 1.5458124689757824,
+        "p95": 3.4274437814019603,
+        "p99": 5.321941133006474
+      }
+    },
+    "global_popularity": {
+      "candidate_k": 100,
+      "recall@50": 0.009683108139821745,
+      "recall@100": 0.013788190741780587
+    }
+  }
+}
