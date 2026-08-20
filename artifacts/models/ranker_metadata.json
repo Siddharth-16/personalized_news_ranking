@@ -1,0 +1,25 @@
+{
+  "model": "HistGradientBoostingClassifier",
+  "features": [
+    "semantic_similarity",
+    "category_affinity",
+    "subcategory_affinity",
+    "log_popularity",
+    "log_history_length"
+  ],
+  "feature_count": 5,
+  "negative_ratio": 4,
+  "random_seed": 42,
+  "validation_cutoff": "2019-11-14",
+  "training_impressions": 126695,
+  "dataset_stats": {
+    "examples": 882735,
+    "positive_examples": 185902,
+    "negative_examples": 696833,
+    "impressions_used": 124229,
+    "no_usable_history": 2466,
+    "no_positive_candidates": 0,
+    "missing_candidate_features": 0
+  },
+  "scikit_learn_version": "1.9.0"
+}

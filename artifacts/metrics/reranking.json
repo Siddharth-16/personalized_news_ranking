@@ -1,0 +1,48 @@
+{
+  "dataset": "MINDsmall",
+  "validation_date": "2019-11-14",
+  "retrieval_corpus_size": 47538,
+  "evaluated_impressions": 20168,
+  "no_usable_history": 543,
+  "cold_only_impressions": 9559,
+  "retrieval_hit_impressions": 798,
+  "recall@100": 0.02794181885812191,
+  "end_to_end": {
+    "faiss_similarity": {
+      "mrr": 0.003816253382942461,
+      "ndcg@5": 0.002976415842714926,
+      "ndcg@10": 0.0038729807859332163
+    },
+    "retrieval_plus_reranker": {
+      "mrr": 0.004406707828936975,
+      "ndcg@5": 0.003946032656437266,
+      "ndcg@10": 0.004686334167194328
+    }
+  },
+  "conditional_on_retrieval_hit": {
+    "faiss_similarity": {
+      "mrr": 0.09644886995887661,
+      "ndcg@5": 0.07522350215021884,
+      "ndcg@10": 0.09788255199335981
+    },
+    "retrieval_plus_reranker": {
+      "mrr": 0.11137153320050242,
+      "ndcg@5": 0.09972880528198844,
+      "ndcg@10": 0.11843858080698647
+    }
+  },
+  "latency_ms": {
+    "retrieval": {
+      "mean": 1.931469821362041,
+      "p50": 1.70331250410527,
+      "p95": 2.7155481133377153,
+      "p99": 4.848148150485914
+    },
+    "reranking": {
+      "mean": 13.729308430338971,
+      "p50": 12.043833499774337,
+      "p95": 22.544164588907734,
+      "p99": 54.794340009102534
+    }
+  }
+}
