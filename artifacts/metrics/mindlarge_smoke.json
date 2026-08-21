@@ -1,0 +1,22 @@
+{
+  "dataset": "MINDlarge",
+  "input": "data/raw/mindlarge/train/behaviors.tsv",
+  "input_size_mb": 1310.19988155365,
+  "chunksize": 25000,
+  "chunks_processed": 5,
+  "impressions": 125000,
+  "candidate_interactions": 4671644,
+  "clicks": 190088,
+  "history_clicks": 4142975,
+  "empty_histories": 2565,
+  "unique_candidate_articles": 19714,
+  "timing_seconds": {
+    "read": 1.1025517508969642,
+    "transform": 4.125063624989707,
+    "total": 5.230472250026651
+  },
+  "throughput": {
+    "interactions_per_second": 893159.1215260145
+  },
+  "peak_rss_mb": 550.15625
+}
