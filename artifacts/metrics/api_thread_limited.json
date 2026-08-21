@@ -1,0 +1,77 @@
+{
+  "benchmark": "day5_unoptimized_api",
+  "endpoint": "/recommend/{user_id}",
+  "request_type": "personalized_known_users",
+  "requests_per_concurrency": 500,
+  "warmup_requests": 20,
+  "results": [
+    {
+      "concurrency": 1,
+      "total_requests": 500,
+      "successful_requests": 500,
+      "failed_requests": 0,
+      "failure_rate": 0.0,
+      "wall_time_seconds": 3.5611220829887316,
+      "requests_per_second": 140.40518363256072,
+      "latency_ms": {
+        "mean": 7.08957782597281,
+        "p50": 6.298374471953139,
+        "p95": 9.174062867532482,
+        "p99": 24.05379580915903,
+        "min": 5.742667010053992,
+        "max": 75.84391697309911
+      }
+    },
+    {
+      "concurrency": 5,
+      "total_requests": 500,
+      "successful_requests": 500,
+      "failed_requests": 0,
+      "failure_rate": 0.0,
+      "wall_time_seconds": 2.280026166001335,
+      "requests_per_second": 219.2957289068705,
+      "latency_ms": {
+        "mean": 22.607924322481267,
+        "p50": 21.13881299737841,
+        "p95": 31.82539166591595,
+        "p99": 43.737719235941505,
+        "min": 9.049000043887645,
+        "max": 84.68429202912375
+      }
+    },
+    {
+      "concurrency": 10,
+      "total_requests": 500,
+      "successful_requests": 500,
+      "failed_requests": 0,
+      "failure_rate": 0.0,
+      "wall_time_seconds": 2.407450583006721,
+      "requests_per_second": 207.68858290563057,
+      "latency_ms": {
+        "mean": 47.70214690361172,
+        "p50": 45.964291522977874,
+        "p95": 65.87048805959056,
+        "p99": 87.16283599555025,
+        "min": 21.713666967116296,
+        "max": 98.21887500584126
+      }
+    },
+    {
+      "concurrency": 25,
+      "total_requests": 500,
+      "successful_requests": 500,
+      "failed_requests": 0,
+      "failure_rate": 0.0,
+      "wall_time_seconds": 3.079641917021945,
+      "requests_per_second": 162.35653802358513,
+      "latency_ms": {
+        "mean": 148.82622083718888,
+        "p50": 118.52168751647696,
+        "p95": 390.9742691088466,
+        "p99": 633.4871901740552,
+        "min": 32.150750048458576,
+        "max": 1276.5640830039047
+      }
+    }
+  ]
+}
