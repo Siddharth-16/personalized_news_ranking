@@ -1,0 +1,28 @@
+{
+  "experiment": "recency_weighted_user_pooling",
+  "half_life_clicks": 10.0,
+  "warm_corpus_articles": 47538,
+  "evaluated_impressions": 20168,
+  "no_usable_history": 543,
+  "cold_only_impressions": 9559,
+  "mean_pooling": {
+    "recall@50": 0.016833718173712226,
+    "recall@100": 0.02794181885812191
+  },
+  "recency_weighted": {
+    "recall@50": 0.017170508542979784,
+    "recall@100": 0.027963283576135617
+  },
+  "mean_pooling_latency": {
+    "mean_ms": 1.830222403320943,
+    "p50_ms": 1.5721669769845903,
+    "p95_ms": 3.2443438627524297,
+    "p99_ms": 4.117502591689095
+  },
+  "recency_weighted_latency": {
+    "mean_ms": 1.8101954241539757,
+    "p50_ms": 1.554937509354204,
+    "p95_ms": 3.2799590058857575,
+    "p99_ms": 4.182694579940281
+  }
+}

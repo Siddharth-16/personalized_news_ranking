@@ -1,0 +1,35 @@
+{
+  "experiment": "frozen_embedding_retrieval_k_sweep",
+  "k_values": [
+    50,
+    100,
+    200,
+    500,
+    1000
+  ],
+  "max_k": 1000,
+  "warm_corpus_articles": 47538,
+  "evaluated_impressions": 20168,
+  "no_usable_history": 543,
+  "cold_only_impressions": 9559,
+  "popularity": {
+    "recall@50": 0.009683108139821745,
+    "recall@100": 0.013788190741780587,
+    "recall@200": 0.04182170976473833,
+    "recall@500": 0.12722373240272883,
+    "recall@1000": 0.22512761834335615
+  },
+  "embedding_faiss": {
+    "recall@50": 0.016833718173712226,
+    "recall@100": 0.02794181885812191,
+    "recall@200": 0.043697248529160466,
+    "recall@500": 0.0799155775578822,
+    "recall@1000": 0.12204376111679761
+  },
+  "max_k_latency": {
+    "mean_ms": 2.402896862922453,
+    "p50_ms": 2.2703334980178624,
+    "p95_ms": 3.161018731771034,
+    "p99_ms": 4.958479835768212
+  }
+}

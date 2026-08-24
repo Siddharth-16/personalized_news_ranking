@@ -1,0 +1,33 @@
+{
+  "experiment": "multi_interest_retrieval",
+  "recent_click_queries": 5,
+  "includes_mean_query": true,
+  "fusion": "maximum_cosine_similarity",
+  "per_query_k": 100,
+  "final_k": 100,
+  "warm_corpus_articles": 47538,
+  "evaluated_impressions": 20168,
+  "no_usable_history": 543,
+  "cold_only_impressions": 9559,
+  "mean_queries_per_user": 5.777221340737802,
+  "single_vector": {
+    "recall@50": 0.016833718173712226,
+    "recall@100": 0.02794181885812191
+  },
+  "multi_interest": {
+    "recall@50": 0.017416342169664263,
+    "recall@100": 0.0308564991577685
+  },
+  "single_vector_latency": {
+    "mean_ms": 2.0017102716644124,
+    "p50_ms": 1.6189375019166619,
+    "p95_ms": 3.307670960202812,
+    "p99_ms": 4.325371753075158
+  },
+  "multi_interest_latency": {
+    "mean_ms": 11.849421530731838,
+    "p50_ms": 10.11656250921078,
+    "p95_ms": 19.72820174996741,
+    "p99_ms": 26.025691235554348
+  }
+}

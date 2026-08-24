@@ -1,0 +1,44 @@
+{
+  "dataset": "MINDsmall",
+  "embeddings": {
+    "directory": "artifacts/embeddings_title_abstract",
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_dim": 384
+  },
+  "split": {
+    "strategy": "chronological",
+    "validation_date": "2019-11-14",
+    "train_impressions": 126695,
+    "validation_impressions": 30270
+  },
+  "corpus": {
+    "all_articles": 51282,
+    "training_observed_articles": 47538
+  },
+  "evaluation": {
+    "evaluated_impressions": 20168,
+    "no_usable_history": 543,
+    "no_positive_articles": 0,
+    "cold_only_impressions": 9559,
+    "personalization_coverage": 0.9737820481869538
+  },
+  "retrieval": {
+    "embedding_faiss": {
+      "index": "IndexFlatIP",
+      "candidate_k": 100,
+      "recall@50": 0.015874749699372866,
+      "recall@100": 0.02668070585811562,
+      "latency_ms": {
+        "mean": 1.5925333783822837,
+        "p50": 1.5127910010050982,
+        "p95": 3.030233542085625,
+        "p99": 3.3047062775585787
+      }
+    },
+    "global_popularity": {
+      "candidate_k": 100,
+      "recall@50": 0.009683108139821745,
+      "recall@100": 0.013788190741780587
+    }
+  }
+}
